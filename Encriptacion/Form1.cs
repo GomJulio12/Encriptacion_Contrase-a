@@ -79,7 +79,37 @@ namespace Encriptacion
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
+            txtPassword.PasswordChar = '•';
+        }
 
+        private void BtMostrar_Click(object sender, EventArgs e)
+        {
+            BtOcultar.BringToFront();
+            txtPassword.PasswordChar = '\0';
+        }
+
+        private void BtOcultar_Click(object sender, EventArgs e)
+        {
+            BtMostrar.BringToFront();
+            txtPassword.PasswordChar = '•';
+
+        }
+
+        private void BtConfirmarMostrar_Click(object sender, EventArgs e)
+        {
+            BtConfirmarOcultar.BringToFront();
+            txtConPassword.PasswordChar = '\0';
+        }
+
+        private void BtConfirmarOcultar_Click(object sender, EventArgs e)
+        {
+            BtConfirmarMostrar.BringToFront();
+            txtConPassword.PasswordChar = '•';
+        }
+
+        private void txtConPassword_TextChanged(object sender, EventArgs e)
+        {
+            txtConPassword.PasswordChar = '•';
         }
     }
 }

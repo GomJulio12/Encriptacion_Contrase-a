@@ -163,6 +163,12 @@
   <ItemGroup>
     <None Include="img\usuario.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\hide.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

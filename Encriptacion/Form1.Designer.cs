@@ -42,8 +42,18 @@
             this.LabelRegister = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.BtOcultar = new System.Windows.Forms.PictureBox();
+            this.BtMostrar = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtConfirmarOcultar = new System.Windows.Forms.PictureBox();
+            this.BtConfirmarMostrar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.BtOcultar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtMostrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarOcultar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarMostrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,7 +128,7 @@
             this.txtPassword.Location = new System.Drawing.Point(402, 257);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(287, 27);
+            this.txtPassword.Size = new System.Drawing.Size(249, 27);
             this.txtPassword.TabIndex = 6;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
@@ -146,8 +156,9 @@
             this.txtConPassword.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConPassword.Location = new System.Drawing.Point(402, 314);
             this.txtConPassword.Name = "txtConPassword";
-            this.txtConPassword.Size = new System.Drawing.Size(287, 27);
+            this.txtConPassword.Size = new System.Drawing.Size(249, 27);
             this.txtConPassword.TabIndex = 9;
+            this.txtConPassword.TextChanged += new System.EventHandler(this.txtConPassword_TextChanged);
             // 
             // panel1
             // 
@@ -192,16 +203,27 @@
             this.label5.Text = "¿Ya tienes una cuenta?";
             this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
-            // label6
+            // BtOcultar
             // 
-            this.label6.AutoSize = true;
-            this.label6.Image = global::Encriptacion.Properties.Resources.usuario;
-            this.label6.Location = new System.Drawing.Point(656, 143);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 18);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "        ";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.BtOcultar.Image = global::Encriptacion.Properties.Resources.hide;
+            this.BtOcultar.Location = new System.Drawing.Point(653, 257);
+            this.BtOcultar.Name = "BtOcultar";
+            this.BtOcultar.Size = new System.Drawing.Size(36, 27);
+            this.BtOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtOcultar.TabIndex = 17;
+            this.BtOcultar.TabStop = false;
+            this.BtOcultar.Click += new System.EventHandler(this.BtOcultar_Click);
+            // 
+            // BtMostrar
+            // 
+            this.BtMostrar.Image = global::Encriptacion.Properties.Resources.view;
+            this.BtMostrar.Location = new System.Drawing.Point(653, 257);
+            this.BtMostrar.Name = "BtMostrar";
+            this.BtMostrar.Size = new System.Drawing.Size(36, 27);
+            this.BtMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtMostrar.TabIndex = 16;
+            this.BtMostrar.TabStop = false;
+            this.BtMostrar.Click += new System.EventHandler(this.BtMostrar_Click);
             // 
             // label7
             // 
@@ -213,12 +235,56 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "        ";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Image = global::Encriptacion.Properties.Resources.usuario;
+            this.label6.Location = new System.Drawing.Point(656, 143);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 18);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "        ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(-23, -46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BtConfirmarOcultar
+            // 
+            this.BtConfirmarOcultar.Image = global::Encriptacion.Properties.Resources.hide;
+            this.BtConfirmarOcultar.Location = new System.Drawing.Point(653, 314);
+            this.BtConfirmarOcultar.Name = "BtConfirmarOcultar";
+            this.BtConfirmarOcultar.Size = new System.Drawing.Size(36, 27);
+            this.BtConfirmarOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtConfirmarOcultar.TabIndex = 19;
+            this.BtConfirmarOcultar.TabStop = false;
+            this.BtConfirmarOcultar.Click += new System.EventHandler(this.BtConfirmarOcultar_Click);
+            // 
+            // BtConfirmarMostrar
+            // 
+            this.BtConfirmarMostrar.Image = global::Encriptacion.Properties.Resources.view;
+            this.BtConfirmarMostrar.Location = new System.Drawing.Point(653, 314);
+            this.BtConfirmarMostrar.Name = "BtConfirmarMostrar";
+            this.BtConfirmarMostrar.Size = new System.Drawing.Size(36, 27);
+            this.BtConfirmarMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtConfirmarMostrar.TabIndex = 20;
+            this.BtConfirmarMostrar.TabStop = false;
+            this.BtConfirmarMostrar.Click += new System.EventHandler(this.BtConfirmarMostrar_Click);
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(722, 439);
+            this.Controls.Add(this.BtMostrar);
+            this.Controls.Add(this.BtConfirmarMostrar);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -235,11 +301,18 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtOcultar);
+            this.Controls.Add(this.BtConfirmarOcultar);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "frmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrarse";
+            ((System.ComponentModel.ISupportInitialize)(this.BtOcultar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtMostrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarOcultar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarMostrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,6 +336,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox BtMostrar;
+        private System.Windows.Forms.PictureBox BtOcultar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox BtConfirmarOcultar;
+        private System.Windows.Forms.PictureBox BtConfirmarMostrar;
     }
 }
 
