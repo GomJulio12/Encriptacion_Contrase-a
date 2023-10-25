@@ -48,6 +48,35 @@ namespace Encriptacion
             encryptionDictionary.Add("Y", "WA");
             encryptionDictionary.Add("Z", "XB");
 
+            // Minúsculas
+            encryptionDictionary.Add("a", "yc");
+            encryptionDictionary.Add("b", "zd");
+            encryptionDictionary.Add("c", "ac");
+            encryptionDictionary.Add("d", "bf");
+            encryptionDictionary.Add("e", "cg");
+            encryptionDictionary.Add("f", "dh");
+            encryptionDictionary.Add("g", "ei");
+            encryptionDictionary.Add("h", "fj");
+            encryptionDictionary.Add("i", "gk");
+            encryptionDictionary.Add("j", "hl");
+            encryptionDictionary.Add("k", "im");
+            encryptionDictionary.Add("l", "jn");
+            encryptionDictionary.Add("m", "kñ");
+            encryptionDictionary.Add("n", "lo");
+            encryptionDictionary.Add("ñ", "mp");
+            encryptionDictionary.Add("o", "nq");
+            encryptionDictionary.Add("p", "ñr");
+            encryptionDictionary.Add("q", "os");
+            encryptionDictionary.Add("r", "pt");
+            encryptionDictionary.Add("s", "qu");
+            encryptionDictionary.Add("t", "rv");
+            encryptionDictionary.Add("u", "sw");
+            encryptionDictionary.Add("v", "tx");
+            encryptionDictionary.Add("w", "uy");
+            encryptionDictionary.Add("x", "vz");
+            encryptionDictionary.Add("y", "wa");
+            encryptionDictionary.Add("z", "xb");
+
 
             encryptionDictionary.Add("1", "93");
             encryptionDictionary.Add("2", "04");
@@ -59,6 +88,9 @@ namespace Encriptacion
             encryptionDictionary.Add("8", "60");
             encryptionDictionary.Add("9", "71");
             encryptionDictionary.Add("0", "82");
+
+            // Agregar un espacio en blanco
+            encryptionDictionary.Add(" ", " "); // Mapear un espacio en blanco a sí mismo
 
             //ESTE HACE EL TEXTO ENCRIPTADO LO VUELVA AL TEXTO ORIGINAL INVIRTIENDO EL DICCIONARIO.
             foreach (var entry in encryptionDictionary)
