@@ -1,6 +1,6 @@
 # Encriptacion de Contraseña  <hr>
 
-De acuerdo al ejercicio de encriptado de la clase anterior deberán colocar su tabla de traducciones.
+<p> De acuerdo al ejercicio de encriptado de la clase anterior deberán colocar su tabla de traducciones. </p>
 
 1. Diccionario de encriptacion de carácteres
    letras| A | B | C | D | E | F | G | H | I | J | K | L | M | N | Ñ | O | P | Q | R | S | T | U | V | W | X | Y | Z |
@@ -19,9 +19,10 @@ De acuerdo al ejercicio de encriptado de la clase anterior deberán colocar su t
 
 Seguridad en Computo
 ---------------
-### encriptar el siguiente mensaje:
+### Encriptar el siguiente mensaje:
 
-“Seguridad en cómputo 7°M”
+**Texto a Texto a encriptar:** Seguridad en cómputo 7°M  
+**Texto a Encriptado:** QUcgeiswptgkbfycbfggcgloggacnqkññrswrvnqgg5929KÑ
 
 ### Integrantes de Equipo
 * Manuel de Jesus Nango Ponce
