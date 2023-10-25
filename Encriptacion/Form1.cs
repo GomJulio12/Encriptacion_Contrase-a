@@ -105,6 +105,7 @@ namespace Encriptacion
         {
             BtConfirmarMostrar.BringToFront();
             txtConPassword.PasswordChar = '•';
+
         }
 
         private void txtConPassword_TextChanged(object sender, EventArgs e)
