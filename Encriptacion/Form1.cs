@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZstdSharp.Unsafe;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Encriptacion
 {
@@ -111,6 +113,30 @@ namespace Encriptacion
         private void txtConPassword_TextChanged(object sender, EventArgs e)
         {
             txtConPassword.PasswordChar = '•';
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void BtnMostrar_Click(object sender, EventArgs e)
+        {
+            string usuario = txtUsuario.Text;
+
+            if (!string.IsNullOrEmpty(usuario))
+            {
+                Modelo modelo = new Modelo(); // Crear una instancia del modelo.
+                string password = modelo.ObtenerPasswordPorUsuario(usuario);
+
+                // Mostrar la contraseña en textBox2.
+                textBox1.Text = password;
+            }
+            else
+            {
+                // Limpiar textBox2 si el campo de usuario está vacío.
+                textBox1.Text = string.Empty;
+            }
         }
     }
 }

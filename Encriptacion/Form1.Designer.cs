@@ -38,7 +38,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.buttonRegistrarse = new System.Windows.Forms.Button();
             this.txtConPassword = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.LabelRegister = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,14 +45,17 @@
             this.BtMostrar = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtConfirmarOcultar = new System.Windows.Forms.PictureBox();
             this.BtConfirmarMostrar = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtnMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BtOcultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtMostrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarOcultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarMostrar)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -160,15 +162,6 @@
             this.txtConPassword.TabIndex = 9;
             this.txtConPassword.TextChanged += new System.EventHandler(this.txtConPassword_TextChanged);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(357, 438);
-            this.panel1.TabIndex = 10;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // LabelRegister
             // 
             this.LabelRegister.AutoSize = true;
@@ -246,14 +239,6 @@
             this.label6.Text = "        ";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(-23, -46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            // 
             // BtConfirmarOcultar
             // 
             this.BtConfirmarOcultar.Image = global::Encriptacion.Properties.Resources.hide;
@@ -276,6 +261,45 @@
             this.BtConfirmarMostrar.TabStop = false;
             this.BtConfirmarMostrar.Click += new System.EventHandler(this.BtConfirmarMostrar_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.BtnMostrar);
+            this.panel1.Controls.Add(this.Label8);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(379, 438);
+            this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Label8
+            // 
+            this.Label8.AutoSize = true;
+            this.Label8.Location = new System.Drawing.Point(90, 27);
+            this.Label8.Name = "Label8";
+            this.Label8.Size = new System.Drawing.Size(162, 18);
+            this.Label8.TabIndex = 1;
+            this.Label8.Text = "Contraseña cifrada";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(36, 48);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(260, 26);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // BtnMostrar
+            // 
+            this.BtnMostrar.Location = new System.Drawing.Point(301, 48);
+            this.BtnMostrar.Name = "BtnMostrar";
+            this.BtnMostrar.Size = new System.Drawing.Size(75, 23);
+            this.BtnMostrar.TabIndex = 2;
+            this.BtnMostrar.Text = "Mostrar";
+            this.BtnMostrar.UseVisualStyleBackColor = true;
+            this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -284,7 +308,6 @@
             this.ClientSize = new System.Drawing.Size(722, 439);
             this.Controls.Add(this.BtMostrar);
             this.Controls.Add(this.BtConfirmarMostrar);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -310,9 +333,10 @@
             this.Text = "Registrarse";
             ((System.ComponentModel.ISupportInitialize)(this.BtOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtMostrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarMostrar)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,7 +353,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button buttonRegistrarse;
         private System.Windows.Forms.TextBox txtConPassword;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label LabelRegister;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label5;
@@ -338,9 +361,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox BtMostrar;
         private System.Windows.Forms.PictureBox BtOcultar;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox BtConfirmarOcultar;
         private System.Windows.Forms.PictureBox BtConfirmarMostrar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Label8;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BtnMostrar;
     }
 }
 

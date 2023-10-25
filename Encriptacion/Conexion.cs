@@ -14,7 +14,7 @@ namespace Encriptacion
             string servidor = "localhost";
             string puerto = "3306";
             string usuario = "root";
-            string password = "Gomez_2002.";
+            string password = "fernando231XD";
             string bd = "encriptacion";
 
             string cadenaConexion = "server=" + servidor + "; port=" + puerto + "; user id=" + usuario + "; password=" + password + "; database=" + bd;

@@ -49,6 +49,29 @@ namespace Encriptacion
             {
                 return false;
             }
+
         }
+        //traer la contraseña
+        public string ObtenerPasswordPorUsuario(string usuario)
+        {
+            MySqlConnection conexion = Conexion.getConexion();
+            conexion.Open();
+
+            string sql = "SELECT password FROM USUARIO WHERE usuario = @usuario";
+            MySqlCommand comando = new MySqlCommand(sql, conexion);
+            comando.Parameters.AddWithValue("@usuario", usuario);
+
+            object result = comando.ExecuteScalar();
+
+            if (result != null)
+            {
+                return result.ToString();
+            }
+            else
+            {
+                return "Usuario no encontrado";
+            }
+        }
+
     }
 }
