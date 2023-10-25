@@ -48,9 +48,12 @@
             this.BtConfirmarOcultar = new System.Windows.Forms.PictureBox();
             this.BtConfirmarMostrar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnMostrar = new System.Windows.Forms.Button();
             this.Label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.BtnMostrar = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.BtnDecifrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BtOcultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtMostrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtConfirmarOcultar)).BeginInit();
@@ -264,6 +267,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.BtnDecifrar);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.BtnMostrar);
             this.panel1.Controls.Add(this.Label8);
             this.panel1.Controls.Add(this.textBox1);
@@ -272,6 +278,16 @@
             this.panel1.Size = new System.Drawing.Size(379, 438);
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // BtnMostrar
+            // 
+            this.BtnMostrar.Location = new System.Drawing.Point(301, 48);
+            this.BtnMostrar.Name = "BtnMostrar";
+            this.BtnMostrar.Size = new System.Drawing.Size(75, 23);
+            this.BtnMostrar.TabIndex = 2;
+            this.BtnMostrar.Text = "Mostrar";
+            this.BtnMostrar.UseVisualStyleBackColor = true;
+            this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
             // 
             // Label8
             // 
@@ -290,15 +306,31 @@
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // BtnMostrar
+            // textBox2
             // 
-            this.BtnMostrar.Location = new System.Drawing.Point(301, 48);
-            this.BtnMostrar.Name = "BtnMostrar";
-            this.BtnMostrar.Size = new System.Drawing.Size(75, 23);
-            this.BtnMostrar.TabIndex = 2;
-            this.BtnMostrar.Text = "Mostrar";
-            this.BtnMostrar.UseVisualStyleBackColor = true;
-            this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
+            this.textBox2.Location = new System.Drawing.Point(36, 135);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(260, 26);
+            this.textBox2.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(111, 114);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(73, 18);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Decifrar";
+            // 
+            // BtnDecifrar
+            // 
+            this.BtnDecifrar.Location = new System.Drawing.Point(301, 135);
+            this.BtnDecifrar.Name = "BtnDecifrar";
+            this.BtnDecifrar.Size = new System.Drawing.Size(75, 23);
+            this.BtnDecifrar.TabIndex = 5;
+            this.BtnDecifrar.Text = "Mostrar";
+            this.BtnDecifrar.UseVisualStyleBackColor = true;
+            this.BtnDecifrar.Click += new System.EventHandler(this.BtnDecifrar_Click);
             // 
             // frmRegister
             // 
@@ -367,6 +399,9 @@
         private System.Windows.Forms.Label Label8;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button BtnMostrar;
+        private System.Windows.Forms.Button BtnDecifrar;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

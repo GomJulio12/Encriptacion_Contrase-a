@@ -129,13 +129,31 @@ namespace Encriptacion
                 Modelo modelo = new Modelo(); // Crear una instancia del modelo.
                 string password = modelo.ObtenerPasswordPorUsuario(usuario);
 
-                // Mostrar la contraseña en textBox2.
+                // Mostrar la contraseña en textBox1.
                 textBox1.Text = password;
             }
             else
             {
-                // Limpiar textBox2 si el campo de usuario está vacío.
+                // Limpiar textBox1 si el campo de usuario está vacío.
                 textBox1.Text = string.Empty;
+            }
+        }
+
+        private void BtnDecifrar_Click(object sender, EventArgs e)
+        {
+            string contraseña = textBox1.Text;
+            
+            if(!string.IsNullOrEmpty(contraseña))
+            {
+                Controlador controlador = new Controlador();
+                String descifrar = controlador.Descriptar(contraseña);
+
+                //Mostrar la contraseña en 
+                textBox2.Text = descifrar;
+            }else
+            {
+                //Limpiamos textBox2 si el campo de usuario está vacío.
+                textBox2.Text = string.Empty;
             }
         }
     }
