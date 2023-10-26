@@ -21,7 +21,7 @@ Seguridad en Computo
 ---------------
 ### Encriptar el siguiente mensaje:
 
-**Texto a Texto a encriptar:** Seguridad en cómputo 7°M  
+**Texto a encriptar:** Seguridad en cómputo 7°M  
 **Texto a Encriptado:** QUcgeiswptgkbfycbfggcgloggacnqkññrswrvnqgg5929KÑ
 
 ### Integrantes de Equipo
